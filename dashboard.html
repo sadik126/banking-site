@@ -16,19 +16,58 @@
     </header>
 
     <main>
-        <section>
-            <div class="grid grid-cols-3 gap-4 bg-lime-500">
-                <div class="">
-                    <h1 class="text-3xl">Deposite</h1>
-                    <h3 class="text-2xl">00 ৳</h3>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 mx-auto w-3/4 ">
+                <div class="bg-lime-500 p-8 rounded text-white">
+                    <h1 class="text-2xl">Deposite</h1>
+                    <h3 class="text-5xl"> <span id="depoid">00</span> ৳</h3>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="bg-blue-500 p-8 rounded text-white">
+                    <h1 class="text-2xl">Withdraw</h1>
+                    <h3 class="text-5xl">00 ৳</h3>
+                </div>
+                <div class="bg-red-500 p-8 rounded text-white">
+                    <h1 class="text-2xl">Balance</h1>
+                    <h3 class="text-5xl">6000 ৳</h3>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 mx-auto w-3/4">
+                <div class="bg-yellow-600 p-8 rounded">
+                    <h3 class="text-3xl mb-8">please Deposit</h3>
+
+                    <div>
+                        <input class="border-3 border-green-600 rounded block mb-4  w-3/4 px-2" type="text"
+                            placeholder="amount your want to Deposit" id="deposit">
+
+                        <button id="depositbtn"
+                            class="block  bg-red-600 px-4 rounded py-2 text-white font-bold">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="bg-purple-600 p-8 rounded">
+                    <h3 class="text-3xl mb-8">Withdraw here</h3>
+
+                    <div>
+                        <input class="border-3 border-green-600 rounded block mb-4  w-3/4 px-2" type="text"
+                            placeholder="amount your want to withdraw" id="withdraw">
+
+                        <button id="withdrawbtn"
+                            class="block  bg-red-600 px-4 rounded py-2 text-white font-bold">Withdraw</button>
+                    </div>
+                </div>
+
 
             </div>
         </section>
     </main>
-
+    <script src="deposit.js"></script>
 </body>
 
 </html>

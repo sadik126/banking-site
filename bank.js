@@ -10,3 +10,8 @@ document.getElementById('loginbtn').addEventListener('click',function(){
         window.location.href ='dashboard.html';
     }
 })
+
+
+
+//deposite
+
