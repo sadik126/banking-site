@@ -23,13 +23,22 @@ document.getElementById('depositbtn').addEventListener('click',function(){
 })
 
 
-//update balance
+document.getElementById('withdrawbtn').addEventListener('click',function(){
+    let withfield = document.getElementById('withdraw');
+    let amount = withfield.value;
+    console.log(amount);
 
-// let totalbalance = document.getElementById('balance');
-// let addtotal = totalbalance.innerText;
-// let enterdepo = document.getElementById('depoid');
-// let pastamount = enterdepo.innerText;
-// let addpastamount = parseFloat(pastamount);
+    let enterwith = document.getElementById('withid');
+    let pastamount = enterwith.innerText;
+    let newamount = parseFloat(pastamount)  + parseFloat(amount);
+    enterwith.innerText = newamount;
 
-// total = parseFloat(addtotal) + addpastamount ;
-// totalbalance.innerText = total;
+    withfield.value = '';
+
+    let totalbalance = document.getElementById('balance');
+    let addtotal = totalbalance.innerText;
+
+    total = parseFloat(addtotal) - parseFloat(amount) ;
+    totalbalance.innerText = total;
+    
+})
